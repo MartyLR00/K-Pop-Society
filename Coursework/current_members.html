@@ -9,19 +9,58 @@
             <img id="logo" src="images/kpop_logo.jpg" alt="K-Pop"/>
             <h1>RGu K-Pop Society</h1>
         </header>
-        <nav >
+        <nav>
             <div>
                 <ul>
                     <li><a href= 'index.html'>Home</a></li>
-                    <li><a href= 'contact_us.html'>Contact Us</a></li>
-                    <li class="active"><a href= 'current_members.html'>Current Members</a></li>
+                    <li class="active"><a href= 'contact_us.html'>Contact Us</a></li>
+                    <li><a href= 'current_members.html'>Current Members</a></li>
                     <li><a href= 'event_calendar.html'>Calendar</a></li>
                     <li><a href= 'img_gallery.html'>Gallery</a></li>
                 </ul>
             </div>
         </nav>
         <main>
-            
+            <div class="row flex">
+                <div id="left-col">
+                    <h3>Contact Us</h3>
+                    <p>Feel free to fill up the form and/or follow us on Instagram</p>
+                    <form>
+                        <fieldset>
+                            <label for="name">Name: </label>
+                            <input type="text" name = "name" value=""/><br>
+    
+                            <br>
+                            <label for="last_name">Last Name: </label>
+                            <input type="text" name = "last_name" value=""/><br>
+    
+                            <br>
+                            <label for="email">Email Address: </label>
+                            <input type="text" name = "email" value=""/><br>
+    
+                            <br>
+                            <label for="membership">Membership Status: </label>
+                            <input type="radio" name = "membership" value=""/>Yes
+                            <input type="radio" name = "membership" value=""/>No<br>
+    
+                            <br>
+                            <label for="reason">Contact Reasons: </label><br>
+                            <textarea type="comments" cols="50" rows="5" name = "reason" value=""></textarea><br>
+    
+                            <br>
+                            <label for="files">Attach files: </label>
+                            <input type="file" name = "files" value=""/><br>
+    
+                            <br>
+                            <input type="button" value="Submit"/>
+    
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="right-col">
+                    <p>Testing</p>
+                </div>
+            </div>
         </main>
         <aside></aside>
         <footer>
