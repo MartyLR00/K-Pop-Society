@@ -1,14 +1,29 @@
 <html>
     <head>
         <title>K-pop Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-
     <body>
         <header>
-            <img id="logo" src="images/kpop_logo.jpg" alt="K-Pop"/>
+            <!-- Logo, website title, instagram page-->
+            <img id="logo" src="images/logo.jpeg" alt="K-Pop"/>
             <h1>RGU K-Pop Society</h1>
+            <a href="https://www.instagram.com/kpopsocietyrgu/?igsh=N3d5em92cWxvbm1n" class="fa fa-instagram"></a>
+
+            <!--Log in/out form-->
+            <form class="right-col">
+                <fieldset>
+                    <input id="tf-index" type="text" name = "email" value="" placeholder="e-mail"/>
+                    <input id="tf-index" type="text" name = "password" value="" placeholder="password"/>
+                    <button class="button-login" type="button" onclick="login()">Log in/out</button>
+                </fieldset>
+            </form>
         </header>
+        <!--Navigation Bar-->
         <nav>
             <div>
                 <ul>
@@ -17,44 +32,64 @@
                     <li><a href= 'current_members.html'>Current Members</a></li>
                     <li><a href= 'event_calendar.html'>Calendar</a></li>
                     <li class="active"><a href= 'img_gallery.html'>Gallery</a></li>
+                    <li><a href= 'kpop_history.html'>What is K-Pop?</a></li>
+                    <li><a href= 'korean.html'>Learn Korean</a></li>
                 </ul>
             </div>
         </nav>
         <main>
-            <div class = "polaroid">
-                <img class = "pics" src="images/bts.jpg" alt="BTS"/>
-                <div class="container">
-                    <p>BTS</p>
+            <!--Image Gallery-->
+            <div id="img-gallery" class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img class = "gallery-img" src="images/bts.jpeg" alt="BTS" id="img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    </div>
+                    <div class="col-sm">
+                        <img class = "gallery-img" src="images/blackpink.jpg" alt="BLACKPINK" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    </div>
+                    <div class="col-sm">
+                        <img class = "gallery-img" src="images/stray_kids.jpeg" alt="Stray Kids" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <img class = "gallery-img" src="images/ATEEZ.jpg" alt="ATEEZ" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    </div>
+                    <div class="col-sm">
+                        <img class = "gallery-img" src="images/SEVENTEEN.jpg" alt="SEVENTEEN" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    </div>
+                    <div class="col-sm">
+                        <img class = "gallery-img" src="images/txt.jpeg" alt="TOMORROWXTOGETHER" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <img class = "gallery-img" src="images/enhypen.jpg" alt="ENHYPEN" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    </div>
+                    <div class="col-sm">
+                        <img class = "gallery-img" src="images/TWICE.jpg" alt="TWICE" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    </div>
+                    <div class="col-sm">
+                        <img class = "gallery-img" src="images/ITZY.jpg" alt="ITZY" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    </div>
                 </div>
             </div>
-            <div class = "polaroid">
-                <img class = "pics" src="images/blackpink.jpg" alt="BLACKPINK"/>
-            </div>
-            <div class = "polaroid">
-                <img class = "pics" src="images/stray_kids.jpg" alt="Stray Kids"/>
-            </div>
-            <div class = "polaroid">
-                <img class = "pics" src="images/ATEEZ.jpg" alt="ATEEZ"/>
-            </div>
-            <div class = "polaroid">
-                <img class = "pics" src="images/SEVENTEEN.jpg" alt="SEVENTEEN"/>
-            </div>
-            <div class = "polaroid">
-                <img class = "pics" src="images/TXT.jpg" alt="TOMORROWXTOGETHER"/>
-            </div>
-            <div class = "polaroid">
-                <img class = "pics" src="images/enhypen.jpg" alt="ENHYPEN"/>
-            </div>
-            <div class = "polaroid">
-                <img class = "pics" src="images/TWICE.jpg" alt="TWICE"/>
-            </div>
-            <div class = "polaroid">
-                <img class = "pics" src="images/ITZY.jpg" alt="ITZY"/>
-            </div>
         </main>
+        
         <aside></aside>
         <footer>
             <p>Copyright Marta Lopez-Ruiperez</p>
         </footer>
+        <!--JS Images effects-->
+        <script>
+
+            function highlight(x){
+                x.style="border: solid blue 2px";
+            }
+            function delight(x){
+                x.style="border: none";
+                //x.style = "filter: blur(3Px)";
+            }
+        </script>
     </body>
 </html>
