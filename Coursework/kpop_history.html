@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>K-pop Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- Logo, website title, instagram page-->
+            <img id="logo" src="images/logo.jpeg" alt="K-Pop"/>
+            <h1>RGU K-Pop Society</h1>
+            <a href="https://www.instagram.com/kpopsocietyrgu/?igsh=N3d5em92cWxvbm1n" class="fa fa-instagram"></a>
+
+            <!--Log in/out form-->
+            <form class="right-col">
+                <fieldset>
+                    <input id="tf-index" type="text" name = "email" value="" placeholder="e-mail"/>
+                    <input id="tf-index" type="text" name = "password" value="" placeholder="password"/>
+                    <button class="button-login" type="button" onclick="login()">Log in/out</button>
+                </fieldset>
+            </form>
+        </header>
+        <!--Navigation Bar-->
+        <nav>
+            <div>
+                <ul>
+                    <li><a href= 'index.html'>Home</a></li>
+                    <li><a href= 'contact_us.html'>Contact Us</a></li>
+                    <li><a href= 'current_members.html'>Current Members</a></li>
+                    <li><a href= 'event_calendar.html'>Calendar</a></li>
+                    <li><a href= 'img_gallery.html'>Gallery</a></li>
+                    <li  class="active"><a href= 'kpop_history.html'>What is K-Pop?</a></li>
+                    <li><a href= 'korean.html'>Learn Korean</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div id="intro">
+                <h3>What is K-Pop?</h3>
+                <p>K-pop, short for Korean popular music, is a form of popular music originating in South Korea as part 
+                    of South Korean culture1. It includes styles and genres from around the world, such as pop, hip hop, 
+                    R&B, rock, jazz, gospel, reggae, electronic dance, folk, country, disco, and classical on top of its 
+                    traditional Korean music roots. K-Pop is often viewed as a product that has been expertly crafted for 
+                    global consumption. The South Korean government provides generous support to the K-pop industry, recognizing
+                     its potential as a cultural export. K-pop has had a significant impact on the South Korean economy in various ways:</p>
+            </div>
+        </main>
+        <aside>
+            <div class="container text-center">
+                <div class="row align-items-start">
+                  <div class="col">
+                    <h4>Merchandise Sales</h4>
+                    <p>K-pop merchandise has become a lucrative market, with fans eager to purchase merchandise featuring their favorite artists and groups. 
+                        This includes clothing, accessories, posters, albums, and more. K-Pop merchandise, in particular, made a significant addition to this 
+                        number by raising revenue to the tune of USD 114.5 million.</p>
+                  </div>
+                  <div class="col">
+                    <img class = "kpop-img" src="images/kpop_merchandise.jpeg" alt="BT-21 Merchandise"/>
+                  </div>
+                </div>
+                <div class="row align-items-start">
+                    <div class="col">
+                      <h4>Tourism</h4>
+                      <p> With the rise of K-Pop, South Korea has become a popular destination for fans who want to experience the culture and 
+                        see their favorite artists perform live. This has resulted in an increase in the number of tourists visiting South Korea, 
+                        as well as an increase in the amount of money they are spending while in the country.</p>
+                    </div>
+                    <div class="col">
+                      <img class = "kpop-img" src="images/korea_tourism.jpeg" alt="Korea Tourism"/>
+                    </div>
+                </div>
+                <div class="row align-items-start">
+                    <div class="col">
+                      <h4>Entertainment industry</h4>
+                      <p>The success of K-Pop has inspired many young people to pursue careers in music and entertainment, leading to the creation 
+                        of new talent agencies and the expansion of existing ones. At the beginning of most K-pop music videos, the company's name is 
+                        displayed.</p>
+                    </div>
+                    <div class="col">
+                        <iframe style="border-radius:12px" alt="BTS Music Video" width="350" height="200" src="https://www.youtube.com/embed/MBdVXkSdhwU?si=92eqwMQtdwcJaw6y" title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="row align-items-start">
+                    <div class="col">
+                      <h4>Cultural Exports</h4>
+                      <p> The popularity of K-Pop has helped to raise the profile of South Korean culture, and the country has been able to export its cultural products, 
+                        including music, television dramas, and films, to markets all over the world.</p>
+                    </div>
+                    <div class="col">
+                      <img class = "kpop-img" src="images/squid_game.jpeg" alt="Squid Game Picture"/>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <footer>
+            <p>Copyright Marta Lopez-Ruiperez</p>
+        </footer>
+    </body>
+</html>
