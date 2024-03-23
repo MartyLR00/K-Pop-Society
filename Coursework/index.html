@@ -1,14 +1,29 @@
 <html>
     <head>
         <title>K-pop Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-
     <body>
         <header>
-            <img id="logo" src="images/kpop_logo.jpg" alt="K-Pop"/>
+            <!-- Logo, website title, instagram page-->
+            <img id="logo" src="images/logo.jpeg" alt="K-Pop"/>
             <h1>RGU K-Pop Society</h1>
+            <a href="https://www.instagram.com/kpopsocietyrgu/?igsh=N3d5em92cWxvbm1n" class="fa fa-instagram"></a>
+
+            <!--Log in/out form-->
+            <form class="right-col">
+                <fieldset>
+                    <input id="tf-index" type="text" name = "email" value="" placeholder="e-mail"/>
+                    <input id="tf-index" type="text" name = "password" value="" placeholder="password"/>
+                    <button class="button-login" type="button" onclick="login()">Log in/out</button>
+                </fieldset>
+            </form>
         </header>
+        <!--Navigation Bar-->
         <nav>
             <div >
                 <ul>
@@ -17,20 +32,158 @@
                     <li><a href= 'current_members.html'>Current Members</a></li>
                     <li><a href= 'event_calendar.html'>Calendar</a></li>
                     <li><a href= 'img_gallery.html'>Gallery</a></li>
+                    <li><a href= 'kpop_history.html'>What is K-Pop?</a></li>
+                    <li><a href= 'korean.html'>Learn Korean</a></li>
                 </ul>
             </div>
         </nav>
         <main>
-            <div>
+            <div id="intro">
                 <h3>안녕하세요! Welcome to the home of all the RGU K-Popers</h3>
-                <p>The K-Pop Society is the right place for all the students that love listening or to want to start listening to K-Pop. We will listen to a variety of K-popo groups including BTS, Stray Kids, SEVENTEEN, BlackPink, and much more.</p>
+                <p>Welcome to the vibrant world of K-pop, where music, dance, fashion, and fandom come together to create a cultural phenomenon that has taken the 
+                    globe by storm. Our K-pop society is a dynamic community dedicated to celebrating the artistry and energy of Korean pop music. From the latest 
+                    hits and iconic dance moves to cultural exchanges, we embrace all aspects of the Hallyu wave. Join us to explore the colorful universe of K-pop, 
+                    share your favorite moments, and connect with fellow enthusiasts. Whether you're a seasoned K-pop veteran or new to the scene, there's a place 
+                    for you here to express your passion and dive into the rhythmic beats of Korea's hottest export. 🌟🎧🎼🎤</p>
+            </div>
+            <!--Home carousel-->
+            <div class="carousel">
+                <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="csize d-block" src="images/BTS_concert.jpg" alt="BTS"/>
+                            <div class="carousel-caption d-none d-md-block pic-cap" >
+                                <h5 id="cdescription">BTS Concert</h5>
+                                <p id="cdescription">A BTS concert is a thrilling spectacle, where the energy of K-pop meets the passion of fans, AKA ARMY. The band performs their 
+                                    chart-topping hits with synchronized dance moves and stunning visuals, creating an immersive experience that resonates with 
+                                    themes of hope and unity. It's a place where music transcends language, and every moment is a shared celebration between BTS and the ARMY.</p>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="csize d-block" src="images/albums3.jpeg" alt="BLACKPINK"/>
+                            <div class="carousel-caption d-none d-md-block pic-cap">
+                                <h5>BTS Concert</h5>
+                                <p>A BTS concert is a vibrant and electrifying event that showcases the global K-pop sensation's dynamic performances. 
+                                    Fans, known as the ARMY, gather in anticipation to experience the group's signature blend of catchy melodies, sharp 
+                                    dance routines, and high-production stage setups. The atmosphere buzzes with excitement as BTS delivers hit after hit, 
+                                    often accompanied by impressive visuals and special effects. The connection between BTS and their fans is palpable, with 
+                                    the crowd singing along to every word, creating a unifying and unforgettable experience. Each concert is not just a musical 
+                                    event but a celebration of the band's message of love, acceptance, and self-confidence</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="csize d-block" src="images/stray_kids.jpg" alt="Stray Kids"/>
+                            <div class="carousel-caption d-none d-md-block pic-cap">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="csize d-block" src="images/ATEEZ.jpg" alt="ATEEZ"/>
+                            <div class="carousel-caption d-none d-md-block pic-cap">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="csize d-block" src="images/SEVENTEEN.jpg" alt="SEVENTEEN"/>
+                            <div class="carousel-caption d-none d-md-block pic-cap">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="csize d-block" src="images/TXT.jpg" alt="TOMORROWXTOGETHER"/>
+                            <div class="carousel-caption d-none d-md-block pic-cap">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="csize d-block" src="images/enhypen.jpg" alt="ENHYPEN"/>
+                            <div class="carousel-caption d-none d-md-block pic-cap">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="csize d-block" src="images/TWICE.jpg" alt="TWICE"/>
+                            <div class="carousel-caption d-none d-md-block pic-cap">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="csize d-block" src="images/ITZY.jpg" alt="ITZY"/>
+                            <div class="carousel-caption d-none d-md-block pic-cap">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                    </div>
+                </div>
             </div>
         </main>
+        
+        <!--K-pop Tweets-->
         <aside>
-            <h3>Latest Tweets</h3>
+            <h3 id="tea">K-pop Tea ☕</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Girls' Generation Yoona and 2PM's Junho are reportedly dating. <a href="https://t.co/0RabdPFBvb">pic.twitter.com/0RabdPFBvb</a></p>&mdash; Kpop Charts (@kchartsmaster) <a href="https://twitter.com/kchartsmaster/status/1675698865096339457?ref_src=twsrc%5Etfw">July 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="col-sm">
+                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🏆 BEST K-POP SONGS OF 2023: <br><br>#2 JUNGKOOK - Seven <a href="https://t.co/Qm8fFpXF7M">pic.twitter.com/Qm8fFpXF7M</a></p>&mdash; Kpop Charts (@kchartsmaster) <a href="https://twitter.com/kchartsmaster/status/1736168822481064079?ref_src=twsrc%5Etfw">December 16, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">SEVENTEEN&#39;s S.Coups has reportedly been exempted from military service after suffering ligament rupture.<a href="https://t.co/He7nM6HUBJ">https://t.co/He7nM6HUBJ</a> <a href="https://t.co/G2HHewtWQW">pic.twitter.com/G2HHewtWQW</a></p>&mdash; Kpop Charts (@kchartsmaster) <a href="https://twitter.com/kchartsmaster/status/1763344343425749354?ref_src=twsrc%5Etfw">February 29, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="col-sm">
+                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">EXO&#39;s Baekhyun, Xiumin and Chen have ended their exclusive contracts with SM Entertainment and have taken legal action against the company for overdue payment and unreasonable deals. <a href="https://t.co/owNGWl9Mn5">pic.twitter.com/owNGWl9Mn5</a></p>&mdash; Kpop Charts (@kchartsmaster) <a href="https://twitter.com/kchartsmaster/status/1664072733108453378?ref_src=twsrc%5Etfw">June 1, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
         </aside>
         <footer>
             <p>Copyright Marta Lopez-Ruiperez</p>
         </footer>
+
+        <!--JS log in/out-->
+        <script>
+            var counter = 2;
+            function login(){
+                if(counter % 2 == 0){
+                    alert('You have been logged in!');
+                }
+                else {
+                    alert('You have been logged out!');
+                }
+                    counter += 1;
+            }
+        </script>
     </body>
 </html>
