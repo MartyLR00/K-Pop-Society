@@ -41,36 +41,63 @@
             <!--Image Gallery-->
             <div id="img-gallery" class="container">
                 <div class="row">
-                    <div class="col-sm">
-                        <img class = "gallery-img" src="images/bts.jpeg" alt="BTS" id="img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    <div class="col-sm cont">
+                        <img class = "gallery-img" src="images/bts(final).jpeg" alt="BTS" id="img-gallery1" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <div class="middle">
+                            <div class="text"><a href= 'https://www.youtube.com/@BTS'>BTS</a></div>
+                          </div>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm cont">
                         <img class = "gallery-img" src="images/blackpink.jpg" alt="BLACKPINK" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <div class="middle">
+                            <div class="text"><a href= 'https://www.youtube.com/@BLACKPINK'>BLACKPINK</a></div>
+                          </div>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm cont">
                         <img class = "gallery-img" src="images/stray_kids.jpeg" alt="Stray Kids" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <div class="middle">
+                            <div class="text"><a href= 'https://www.youtube.com/@StrayKids'>Stray Kids</a></div>
+                          </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm">
+                    <div class="col-sm cont">
                         <img class = "gallery-img" src="images/ATEEZ.jpg" alt="ATEEZ" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <div class="middle">
+                            <div class="text1"><a href= 'https://www.youtube.com/@ATEEZofficialS'>ATEEZ</a></div>
+                          </div>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm cont">
                         <img class = "gallery-img" src="images/SEVENTEEN.jpg" alt="SEVENTEEN" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <div class="middle">
+                            <div class="text1"><a href= 'https://www.youtube.com/@pledis17'>SEVENTEEN</a></div>
+                          </div>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm cont">
                         <img class = "gallery-img" src="images/txt.jpeg" alt="TOMORROWXTOGETHER" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <div class="middle">
+                            <div class="text1"><a href= 'https://www.youtube.com/@TXT_bighit'>TOMORROWXTOGETHER</a></div>
+                          </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm">
+                    <div class="col-sm cont">
                         <img class = "gallery-img" src="images/enhypen.jpg" alt="ENHYPEN" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <div class="middle">
+                            <div class="text2"><a href= 'https://www.youtube.com/@ENHYPENOFFICIAL'>ENHYPEN</a></div>
+                          </div>
                     </div>
-                    <div class="col-sm">
-                        <img class = "gallery-img" src="images/TWICE.jpg" alt="TWICE" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                    <div class="col-sm cont">
+                        <img class = "gallery-img" src="images/twice.jpeg" alt="TWICE" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <div class="middle">
+                            <div class="text2"><a href= 'https://www.youtube.com/@TWICE'>TWICE</a></div>
+                          </div>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm cont">
                         <img class = "gallery-img" src="images/ITZY.jpg" alt="ITZY" onmouseover="highlight(this)" onmouseout="delight(this)"/>
+                        <div class="middle">
+                            <div class="text2"><a href= 'https://www.youtube.com/@ITZY'>ITZY</a></div>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -80,15 +107,28 @@
         <footer>
             <p>Copyright Marta Lopez-Ruiperez</p>
         </footer>
-        <!--JS Images effects-->
+        
         <script>
-
+            
+            //JS Images effects
             function highlight(x){
                 x.style="border: solid blue 2px";
             }
             function delight(x){
                 x.style="border: none";
                 //x.style = "filter: blur(3Px)";
+            }
+
+            //JS log in/out
+            var counter = 2;
+            function login(){
+                if(counter % 2 == 0){
+                    alert('You have been logged in!');
+                }
+                else {
+                    alert('You have been logged out!');
+                }
+                    counter += 1;
             }
         </script>
     </body>
