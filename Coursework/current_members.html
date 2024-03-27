@@ -40,7 +40,8 @@
         </nav>
         <main>
             <!--Members-->
-            <div class="container">
+            <div class="container" id = "members">
+                <h3>Current Members</h3><br>
                 <div class="row">
                     <div class="col-sm">
                         <h5>President</h5>
@@ -49,30 +50,50 @@
                     </div>
                     <div class="col-sm">
                         <h5>Vice President</h5>
-                        <img src="images/me.jpeg" class="rounded-circle massie-hovering" width="200" height="200" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                        <img src="images/Lorena.png" class="rounded-circle massie-hovering" width="200" height="200" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
                         <h5>Lorena Garcia</h5>
                     </div>
                     <div class="col-sm">
                         <h5>Dance Coach</h5>
-                        <img src="images/me.jpeg" class="rounded-circle massie-hovering" width="200" height="200" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                        <img src="images/Jess.png" class="rounded-circle massie-hovering" width="200" height="200" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
                         <h5>Jess Kim</h5>
                     </div>
                     <div class="col-sm">
                         <h5>Treasurer</h5>
-                        <img src="images/me.jpeg" class="rounded-circle massie-hovering" width="200" height="200" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                        <img src="images/.jpeg" class="rounded-circle massie-hovering" width="200" height="200" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
                         <h5>Nicolas Gonzalez</h5>
                     </div>
                     <div class="col-sm">
                         <h5>Web Master</h5>
-                        <img src="images/me.jpeg" class="rounded-circle massie-hovering" width="200" height="200" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                        <img src="images/Marta.png" class="rounded-circle massie-hovering" width="200" height="200" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
                         <h5>Marta Lopez</h5>
                     </div>
                  </div>
             </div>
         </main>
-        <aside></aside>
+        <aside>
+            <div id="inspiration">
+                <div class="col-left-insp">
+                    <!--Contact Us Form-->
+                    <h3>What Inspired Us to Create a K-Pop Society? </h3>
+                    <p>Feel free to fill up the form and/or follow us on Instagram</p>
+                    
+                </div>
+                <div class="col-right-insp">
+                    <h3>Contact Us</h3>
+                    <button class="button-contact" type="button" onclick="contact()">Contact-Us Page</button>
+                </div>
+            </div>
+        </aside>
         <footer>
             <p>Copyright Marta Lopez-Ruiperez</p>
         </footer>
+
+        <!--JS log in/out-->
+        <script>
+            function contact(){
+                location.replace("contact_us.html")
+            }
+        </script>
     </body>
 </html>
